@@ -1,0 +1,12 @@
+# Turn on URL rewriting
+RewriteEngine On
+
+
+# Protect hidden files from being viewed under any circumstance
+<Files .*>
+  Order Deny,Allow
+  Deny From All
+</Files>
+
+# Rewrite all URLs to httpdocs
+RewriteRule .* httpdocs/$0 [PT]

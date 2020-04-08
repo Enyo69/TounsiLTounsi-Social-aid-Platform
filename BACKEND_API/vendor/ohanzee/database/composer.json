@@ -1,0 +1,60 @@
+{
+    "name":        "ohanzee/database",
+    "description": "Ohanzee component for database SQL queries and query building",
+    "homepage":    "http://ohanzee.org/",
+    "license":     "BSD-3-Clause",
+    "keywords":    [
+        "kohana",
+        "ohanzee",
+        "component",
+        "database",
+        "db",
+        "sql",
+        "query builder"
+    ],
+    "authors": [
+        {
+            "name":     "Kohana Team",
+            "email":    "team@kohanaframework.org",
+            "homepage": "http://kohanaframework.org/team",
+            "role":     "developer"
+        },
+        {
+            "name":     "Ohanzee Contributors",
+            "homepage": "http://ohanzee.org/contributors.html",
+            "role":     "developer"
+        }
+    ],
+    "support": {
+        "source":   "http://github.com/kohana/ohanzee-db",
+        "issues":   "http://github.com/kohana/ohanzee-db/issues",
+        "forum":    "http://discourse.kohanaframework.org/category/ohanzee-components",
+        "irc":      "irc://irc.freenode.net/kohana"
+    },
+    "require": {
+        "php":                 ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.3"
+    },
+    "replace": {
+        "kohana/database": ">=3.3"
+    },
+    "suggest": {
+        "ext-mysql": "*",
+        "ext-pdo":   "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ohanzee\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
